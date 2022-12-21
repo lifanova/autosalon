@@ -9,7 +9,7 @@ public class Autosalon {
     private static int iMax = MAX_VALUE;
 
 
-    public void sellAuto() {
+    public synchronized void sellAuto() {
         System.out.printf("%s открыл продажи автомобилей!\n\n", Thread.currentThread().getName());
 
         try {
